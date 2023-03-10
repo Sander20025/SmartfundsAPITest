@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartFunds.Ui.Webapp", "SmartFunds.Ui.Webapp\SmartFunds.Ui.Webapp.csproj", "{705E922C-7423-4422-8D21-6742C2AEBEAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartFunds.Model", "SmartFunds.Model\SmartFunds.Model.csproj", "{5A464125-C409-4DC5-999B-106552FEBC1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartFunds.Core", "SmartFunds.Core\SmartFunds.Core.csproj", "{1C28AD7A-4CA9-42B2-A82A-0D8B1F3049EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartFunds.Services", "SmartFunds.Services\SmartFunds.Services.csproj", "{D45FB849-F168-44E3-96DA-C882E2D3B29F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartFunds.Api", "SmartFunds.Api\SmartFunds.Api.csproj", "{870D396A-AEFE-4A39-ADA3-149E47FD3F4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3786786B-F645-4EE1-8AAD-7C2E1F15E202}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{8B810A6E-CCC3-4E91-BF2C-B86C8EA2F013}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E7D43AAE-075F-40D4-B54C-6B7398741EAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ui", "Ui", "{7A6E81B0-D02E-41A1-AE71-1B5EF3E48990}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{705E922C-7423-4422-8D21-6742C2AEBEAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{705E922C-7423-4422-8D21-6742C2AEBEAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{705E922C-7423-4422-8D21-6742C2AEBEAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{705E922C-7423-4422-8D21-6742C2AEBEAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A464125-C409-4DC5-999B-106552FEBC1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A464125-C409-4DC5-999B-106552FEBC1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A464125-C409-4DC5-999B-106552FEBC1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A464125-C409-4DC5-999B-106552FEBC1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C28AD7A-4CA9-42B2-A82A-0D8B1F3049EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C28AD7A-4CA9-42B2-A82A-0D8B1F3049EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C28AD7A-4CA9-42B2-A82A-0D8B1F3049EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C28AD7A-4CA9-42B2-A82A-0D8B1F3049EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D45FB849-F168-44E3-96DA-C882E2D3B29F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D45FB849-F168-44E3-96DA-C882E2D3B29F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D45FB849-F168-44E3-96DA-C882E2D3B29F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D45FB849-F168-44E3-96DA-C882E2D3B29F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{870D396A-AEFE-4A39-ADA3-149E47FD3F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{870D396A-AEFE-4A39-ADA3-149E47FD3F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{870D396A-AEFE-4A39-ADA3-149E47FD3F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{870D396A-AEFE-4A39-ADA3-149E47FD3F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{705E922C-7423-4422-8D21-6742C2AEBEAD} = {7A6E81B0-D02E-41A1-AE71-1B5EF3E48990}
+		{5A464125-C409-4DC5-999B-106552FEBC1E} = {3786786B-F645-4EE1-8AAD-7C2E1F15E202}
+		{1C28AD7A-4CA9-42B2-A82A-0D8B1F3049EE} = {3786786B-F645-4EE1-8AAD-7C2E1F15E202}
+		{D45FB849-F168-44E3-96DA-C882E2D3B29F} = {E7D43AAE-075F-40D4-B54C-6B7398741EAE}
+		{870D396A-AEFE-4A39-ADA3-149E47FD3F4E} = {8B810A6E-CCC3-4E91-BF2C-B86C8EA2F013}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE828A28-A1A1-4E86-B5B4-32F58A8C0868}
+	EndGlobalSection
+EndGlobal

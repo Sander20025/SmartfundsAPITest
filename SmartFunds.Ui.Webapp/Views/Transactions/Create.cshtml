@@ -1,0 +1,54 @@
+﻿@model Transaction
+
+@{
+    ViewBag.Title = "Add";
+
+    var organizations = (IList<Organization>?)ViewBag.Organizations;
+}
+
+<h1>Add a new Transaction</h1>
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+    
+    @if (organizations is null)
+    {
+        <input type="hidden" asp-for="OrganizationId"/>
+    }
+    else
+    {
+        <label asp-for="OrganizationId" class="form-label">@nameof(Model.Organization)</label>
+        <select asp-for="OrganizationId" class="form-control">
+            <option value="" selected="selected">Please select an organization</option>
+            @foreach (var organization in organizations)
+            {
+                <option value="@organization.Id">@organization.Name</option>
+            }
+        </select>
+        <span asp-validation-for="OrganizationId"></span>
+    }
+
+    <div class="mb-3">
+        <label asp-for="Owner" class="form-label"></label>
+        <input asp-for="Owner" class="form-control" />
+        <span asp-validation-for="Owner"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Amount" class="form-label"></label>
+        <input asp-for="Amount" class="form-control" />
+        <span asp-validation-for="Amount"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Remarks" class="form-label"></label>
+        <textarea asp-for="Remarks" class="form-control"></textarea>
+        <span asp-validation-for="Remarks"></span>
+    </div>
+    
+    <a asp-action="Index" class="btn btn-secondary">&lt; Back</a>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial"/>
+}
